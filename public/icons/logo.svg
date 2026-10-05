@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="MySearch Hub">
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="#6366F1"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round">
+    <circle cx="57" cy="55" r="24"/>
+    <line x1="75" y1="73" x2="94" y2="92"/>
+  </g>
+</svg>

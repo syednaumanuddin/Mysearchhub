@@ -1,0 +1,199 @@
+.page {
+  min-height: 100%;
+}
+
+.shell {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: var(--space-5) var(--space-4) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xl);
+  font-weight: 650;
+  letter-spacing: -0.015em;
+}
+
+.brandMark {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-sm);
+  background: var(--brand);
+  color: var(--brand-contrast);
+  font-weight: 700;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.sectionTitle {
+  font-size: var(--text-lg);
+}
+
+.sectionHint {
+  margin-top: calc(-1 * var(--space-2));
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.fieldRow {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.label {
+  font-size: var(--text-sm);
+  font-weight: 550;
+}
+
+.help {
+  color: var(--text-subtle);
+  font-size: var(--text-xs);
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  font-size: var(--text-sm);
+}
+
+.input:focus-visible,
+.select:focus-visible {
+  border-color: var(--brand);
+}
+
+.input[aria-invalid="true"] {
+  border-color: var(--danger);
+}
+
+.error {
+  color: var(--danger);
+  font-size: var(--text-xs);
+}
+
+.radioRow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.radioOption {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  padding: var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+
+.radioOption:has(input:checked) {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+}
+
+.radioBody {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.privacyNote {
+  display: flex;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface-2);
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+}
+
+.privacyNote svg {
+  flex: none;
+  margin-top: 2px;
+}
+
+.presetRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.filterRow {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.countNote {
+  color: var(--text-subtle);
+  font-size: var(--text-xs);
+}
+
+.dangerZone {
+  border-color: var(--border);
+}
+
+.checkboxRow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.checkboxOption {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-2);
+}
+
+.dialogField {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
